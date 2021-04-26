@@ -1,6 +1,6 @@
 # Android_Timetable_crawler_parsing
 爬取课表，解析内容
-目前不可用
+大部分功能已经完成
 重写目标点：
 1、改用view binding
 2、rxjava

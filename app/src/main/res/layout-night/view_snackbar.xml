@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Microsoft Corporation. All rights reserved.
+  ~ Licensed under the MIT License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/snackbar_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/snackbar_background"
+    android:minHeight="30dp">
+
+    <TextView
+        android:id="@+id/snackbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="2"
+        android:textAppearance="@style/TextAppearance.UIFabric.SnackbarText"
+        android:textColor="?attr/text_color" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/snackbar_action"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

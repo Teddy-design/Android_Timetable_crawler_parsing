@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="back_image" format="reference" />
+    <attr name="head_image" format="reference" />
+    <attr name="text_color" format="color"/>
+    <attr name="ui_color" format="color"/>
+
+
+</resources>
