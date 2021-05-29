@@ -18,7 +18,7 @@ import java.util.Objects;
 public class File_tool {
 
     public static String read_file(String name, Context context) {
-        String FILENAME = context.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS) + File.separator + "hbutOne" + File.separator + name;
+        String FILENAME = context.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS) + File.separator + name;
         FileInputStream fis = null;
         StringBuilder sb = new StringBuilder();
         try {
@@ -44,7 +44,7 @@ public class File_tool {
 
 
     public static void save_file(String name, String text, Context context) {
-        String FILENAME = context.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS) + File.separator + "hbutOne" + File.separator + name;
+        String FILENAME = context.getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS) + File.separator + name;
         File file = new File(FILENAME);
         if (!file.exists()) {
             File dir = new File(Objects.requireNonNull(file.getParent()));
